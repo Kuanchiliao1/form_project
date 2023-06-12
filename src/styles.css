@@ -1,6 +1,12 @@
 html {box-sizing: border-box;}
 *, *::before, *::after {box-sizing: inherit;}
 
+@font-face {
+  font-family: NorseBold;
+  src: url('./Norse-Bold.otf');
+}
+
 .hello {
   color: red;
+  font-family: NorseBold;
 }
