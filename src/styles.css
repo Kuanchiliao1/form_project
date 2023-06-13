@@ -35,7 +35,8 @@ fieldset {
   gap: 4rem;
 }
 
-.error {
+.error,
+:invalid {
   border-color: red;
 }
 
@@ -107,10 +108,13 @@ label {
   color: rgb(68, 67, 67);
 }
 
-.form-input-container span {
-  font-size: 0;
-}
 
 .form-input-container span.error {
   font-size: 1rem;
+  color: red;
+  margin-top: .2rem;
+}
+
+.form-input-container span {
+  font-size: 0;
 }
