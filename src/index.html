@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <main id="app">
-    <div class="left-page">
-      <header>
-        <!-- logo -->
-        <h1></h1>
-      </header>
-    </div>
-    <div class="right-page">
-      <section class="top"></section>
-      <section class="middle">
-        <fieldset>
-          <label for="first_name"></label>
-          <input type="text" name="first_name" id="first_name" placeholder="First Name">
-          <label for="last_name"></label>
-          <input type="text" name="last_name" id="last_name" placeholder="Last Name">
-        </fieldset>
-        <fieldset>
-          <label for="email"></label>
-          <input type="email">
-        </fieldset>
-        <fieldset>
 
-        </fieldset>
-      </section>
-      <section class="bottom">
-        <button type="submit"></button>
-        <p></p>
-      </section>
-    </div>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main id="app">
+      <div class="left-page">
+        <header>
+          <!-- logo -->
+          <img src="./odin-lined.png" alt="logo">
+          <h1>Odin</h1>
+        </header>
+      </div>
+      <div class="right-page">
+        <section class="top">
+          <p>This is not a real online service! You know you need something like this in your life to help you realize
+            your deepest dreams. Sign up now to get started.</p>
+          <p>You know you want to</p>
+        </section>
+        <section class="middle">
+          <h2>Let's do this!</h2>
+          <form id="account_info" action="" method="POST">
+            <fieldset>
+              <p class="form-input-container">
+                <label for="first_name">first name</label>
+                <input type="text" name="first_name" id="first_name" placeholder="First Name">
+              </p>
+              <p class="form-input-container">
+                <label for="last_name">last name</label>
+                <input type="text" name="last_name" id="last_name" placeholder="Last Name">
+              </p>
+            </fieldset>
+            <fieldset>
+              <p class="form-input-container">
+                <label for="email">email</label>
+                <input type="email">
+              </p>
+              <p class="form-input-container">
+                <label for="phone">phone number</label>
+                <input type="tel">
+              </p>
+            </fieldset>
+            <fieldset>
+              <p class="form-input-container">
+                <label for="password">password</label>
+                <input min="8" class="error" type="password">
+                <span class="error">*Password is invalid</span>
+              </p>
+              <p class="form-input-container">
+                <label for="password_confirm">password confirm</label>
+                <input class="error" type="password">
+                <span class="error">*Password doesn't match</span>
+              </p>
+            </fieldset>
+          </form>
+        </section>
+        <section class="bottom">
+          <button type="submit" form="account_info">Create account_info</button>
+          <p>Already have an account? <a href="">Log in</a></p>
+        </section>
+      </div>
+    </main>
+  </body>
+
 </html>
