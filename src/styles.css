@@ -6,7 +6,111 @@ html {box-sizing: border-box;}
   src: url('./Norse-Bold.otf');
 }
 
-.hello {
-  color: red;
+body {
+  margin: 0;
+}
+
+/* Form */
+input {
+  border: grey 1px solid;
+  border-radius: 2px;
+  padding: .2rem .4rem;
+}
+
+input:focus {
+  border-color: blue;
+  outline: blue;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  display: flex;
+  gap: 4rem;
+}
+
+.error {
+  border-color: red;
+}
+
+.form-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.left-page {
+  position: relative;
+  min-height: 100vh;
+  background: url(https://i.imgur.com/0KRxFE9.jpeg);
+  background-size: cover;
+}
+
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 23% 0 65% 0;
+  background-color: hsla(0, 0%, 0%, 0.518);
+}
+
+section {
+  flex-grow: 1;
+}
+
+section.top {
+  display: flex;
+  flex-direction: column;
+}
+
+.right-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-inline: 1.5rem;
+}
+
+/* Typography */
+h1 {
+  color: white;
   font-family: NorseBold;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+section.top p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: blue;
+}
+
+section.top p:nth-child(1) {
+  color: red;
+  margin-top: auto;
+  border: solid pink 5px;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: rgb(68, 67, 67);
+}
+
+.form-input-container span {
+  font-size: 0;
+}
+
+.form-input-container span.error {
+  font-size: 1rem;
 }
